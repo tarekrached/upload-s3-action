@@ -62,7 +62,7 @@ function run() {
       );
       const params = {
         Bucket: BUCKET,
-        ACL: 'public-read',
+        // ACL: 'public-read',
         Body: fileStream,
         Key: bucketPath,
         ContentType: lookup(p.path) || 'text/plain',
